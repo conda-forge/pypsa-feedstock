@@ -36,7 +36,7 @@ requirements:
     - packaging
     - xarray
     - linopy >=0.2
-    - numexpr<=2.8.4
+    - numexpr <=2.8.4
 
 test:
   imports:
