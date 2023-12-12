@@ -11,7 +11,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 0
+  number: 1
   script: '{{ PYTHON }} -m pip install . -vvv '
   noarch: python
 
@@ -36,7 +36,6 @@ requirements:
     - packaging
     - xarray
     - linopy >=0.2
-    - numexpr <=2.8.4
     - geopandas >=0.9
 
 test:
