@@ -1,6 +1,6 @@
 {% set name = "pypsa" %}
-{% set version = "0.26.0" %}
-{% set sha256 = "cd07eaf4bc4148aa250dc7ac644f58c6fdc2efc324fcc3febdd83606826446b3" %}
+{% set version = "0.26.1" %}
+{% set sha256 = "8e70ba18d19d095b1bb77500a0a91d0a8bb0d92b35e76199ed9f6ee1055c3090" %}
 
 package:
   name: {{ name|lower }}
@@ -11,7 +11,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 1
+  number: 0
   script: '{{ PYTHON }} -m pip install . -vvv '
   noarch: python
 
