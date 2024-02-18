@@ -25,7 +25,6 @@ requirements:
     - networkx >=2
     - numpy
     - pandas >=0.24.0
-    - pyomo >=5.7, <6.6.2 # [not py>=312]
     - python >=3.9
     - scipy
     - netcdf4
@@ -36,6 +35,8 @@ requirements:
     - xarray
     - linopy >=0.2.1
     - geopandas >=0.9
+  run_constrained:
+    - pyomo >=5.7, <6.6.2
 
 test:
   imports:
