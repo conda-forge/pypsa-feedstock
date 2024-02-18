@@ -22,20 +22,19 @@ requirements:
   run:
     - cartopy >=0.16
     - matplotlib-base
-    - networkx >=1.10
+    - networkx >=2
     - numpy
     - pandas >=0.24.0
-    - pyomo >=5.7, <6.6.2
+    - pyomo >=5.7, <6.6.2 # [not py>=312]
     - python >=3.9
     - scipy
-    - six >=1.13.0
     - netcdf4
     - pytables
     - deprecation
     - validators
     - packaging
     - xarray
-    - linopy >=0.2
+    - linopy >=0.2.1
     - geopandas >=0.9
 
 test:
