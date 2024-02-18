@@ -35,7 +35,7 @@ requirements:
     - xarray
     - linopy >=0.2.1
     - geopandas >=0.9
-  run_constrained:
+  # run_constrained:
     - pyomo >=5.7, <6.6.2
 
 test:
