@@ -1,6 +1,6 @@
 {% set name = "pypsa" %}
-{% set version = "0.26.3" %}
-{% set sha256 = "974575f7c2de463342816cc386e6b1a9f56472342f25d29db0f010d9fee7dd01" %}
+{% set version = "0.27.0" %}
+{% set sha256 = "a4ae27aac2aaf6d7a06f6bfe227f1b2bc35075687755ba271c30739dd04881e9" %}
 
 package:
   name: {{ name|lower }}
@@ -22,21 +22,21 @@ requirements:
   run:
     - cartopy >=0.16
     - matplotlib-base
-    - networkx >=1.10
+    - networkx >=2
     - numpy
     - pandas >=0.24.0
-    - pyomo >=5.7, <6.6.2
     - python >=3.9
     - scipy
-    - six >=1.13.0
     - netcdf4
     - pytables
     - deprecation
     - validators
     - packaging
     - xarray
-    - linopy >=0.2
+    - linopy >=0.2.1
     - geopandas >=0.9
+  # run_constrained:
+    - pyomo >=5.7, <6.6.2
 
 test:
   imports:
