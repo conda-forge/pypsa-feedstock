@@ -1,6 +1,6 @@
 {% set name = "pypsa" %}
-{% set version = "0.27.0" %}
-{% set sha256 = "a4ae27aac2aaf6d7a06f6bfe227f1b2bc35075687755ba271c30739dd04881e9" %}
+{% set version = "0.27.1" %}
+{% set sha256 = "a5c9d027ecc81dda3d0b68b666ffd5bed5767430e67dea8760f764af0b1594ec" %}
 
 package:
   name: {{ name|lower }}
@@ -33,7 +33,7 @@ requirements:
     - validators
     - packaging
     - xarray
-    - linopy >=0.2.1
+    - linopy >=0.3.7
     - geopandas >=0.9
   # run_constrained:
     - pyomo >=5.7, <6.6.2
