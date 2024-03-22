@@ -33,7 +33,7 @@ requirements:
     - validators
     - packaging
     - xarray
-    - linopy >=0.2.1
+    - linopy >=0.3.7
     - geopandas >=0.9
   # run_constrained:
     - pyomo >=5.7, <6.6.2
