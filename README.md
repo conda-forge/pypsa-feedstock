@@ -156,5 +156,6 @@ Feedstock Maintainers
 
 * [@coroa](https://github.com/coroa/)
 * [@fneum](https://github.com/fneum/)
+* [@lkstrp](https://github.com/lkstrp/)
 * [@nworbmot](https://github.com/nworbmot/)
 
