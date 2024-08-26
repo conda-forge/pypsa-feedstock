@@ -34,8 +34,6 @@ requirements:
     - networkx >=2
     - deprecation
     - validators
-    - packaging
-    - xarray
     # Exclude highspy
     # - highspy
 
