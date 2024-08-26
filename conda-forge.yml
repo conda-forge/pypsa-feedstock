@@ -1,5 +1,6 @@
 bot:
   inspection: update-grayskull
+  automerge: true
 conda_build:
   pkg_format: '2'
 conda_forge_output_validation: true
