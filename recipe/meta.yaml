@@ -12,7 +12,7 @@ source:
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 0
+  number: 1
 
 requirements:
   host:
@@ -21,7 +21,7 @@ requirements:
     - setuptools-scm >=8
     - pip
   run:
-    - highspy
+    # - highspy
     - python >=3.9
     - numpy
     - scipy
@@ -35,9 +35,6 @@ requirements:
     - networkx >=2
     - deprecation
     - validators
-    # Exclude highspy
-    # - highspy
-
 
 test:
   imports:
