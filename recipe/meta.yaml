@@ -1,5 +1,5 @@
 {% set name = "pypsa" %}
-{% set version = "0.30.2" %}
+{% set version = "0.30.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pypsa-{{ version }}.tar.gz
-  sha256: 2ea2d4b7c8def60ae7ee2557bcd456a8412386a1b55f91ef82067d5d1e9793b0
+  sha256: bb14a933d4778fe616cf1ff27aebb57006c71e42648d477ecdd4d8285cf35924
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 1
+  number: 0
 
 requirements:
   host:
@@ -21,7 +21,6 @@ requirements:
     - setuptools-scm >=8
     - pip
   run:
-    # - highspy
     - python >=3.9
     - numpy
     - scipy
