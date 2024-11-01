@@ -1,5 +1,5 @@
 {% set name = "pypsa" %}
-{% set version = "0.31.0" %}
+{% set version = "0.31.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pypsa-{{ version }}.tar.gz
-  sha256: ad8707143c4996946a3cac1f30146092565eea769f477b310aa125c9329ee76e
+  sha256: 8ec8a161a76b341258f83fc885081083d4ccf0c9588d643a9dac87be7532be13
 
 build:
   noarch: python
@@ -21,6 +21,7 @@ requirements:
     - setuptools-scm >=8
     - pip
   run:
+    - highspy
     - python >=3.9
     - numpy
     - scipy
