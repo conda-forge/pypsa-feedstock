@@ -21,7 +21,6 @@ requirements:
     - setuptools-scm >=8
     - pip
   run:
-    - highspy
     - python >=3.9
     - numpy
     - scipy
