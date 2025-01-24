@@ -40,7 +40,6 @@ test:
   imports:
     - pypsa
   commands:
-    - pip install highspy
     - pip check
   requires:
     - python {{ python_min }}
