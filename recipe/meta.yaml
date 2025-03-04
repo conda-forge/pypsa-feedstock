@@ -1,5 +1,6 @@
 {% set name = "pypsa" %}
-{% set version = "0.33.0" %}
+{% set version = "0.33.1" %}
+{% set python_min = "3.10" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/pypsa-{{ version }}.tar.gz
-  sha256: 816577d23dea536076c595e278a72b2acd09845ef3b8c785be01e136aac89fbb
+  sha256: 0cc736af649d077236884435712522c4adbc80d32c124fac5ec8011cfa53b5bb
 
 build:
   noarch: python
@@ -16,12 +17,12 @@ build:
 
 requirements:
   host:
-    - python >=3.10
+    - python {{ python_min }}
     - setuptools >=64
     - setuptools-scm >=8
     - pip
   run:
-    - python >=3.10
+    - python >={{ python_min }}
     - highspy
     - numpy
     - scipy
@@ -42,7 +43,7 @@ test:
   commands:
     - pip check
   requires:
-    - python >=3.10
+    - python {{ python_min }}
     - pip
 
 about:
