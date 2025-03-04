@@ -1,5 +1,6 @@
 {% set name = "pypsa" %}
 {% set version = "0.33.1" %}
+{% set python_min = "3.10" %}
 
 package:
   name: {{ name|lower }}
@@ -16,12 +17,12 @@ build:
 
 requirements:
   host:
-    - python >=3.10
+    - python >= {{ python_min }}
     - setuptools >=64
     - setuptools-scm >=8
     - pip
   run:
-    - python >=3.10
+    - python >= {{ python_min }}
     - highspy
     - numpy
     - scipy
@@ -42,7 +43,7 @@ test:
   commands:
     - pip check
   requires:
-    - python >=3.10
+    - python >= {{ python_min }}
     - pip
 
 about:
