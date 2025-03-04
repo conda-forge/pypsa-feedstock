@@ -17,12 +17,12 @@ build:
 
 requirements:
   host:
-    - python >= {{ python_min }}
+    - python >={{ python_min }}
     - setuptools >=64
     - setuptools-scm >=8
     - pip
   run:
-    - python >= {{ python_min }}
+    - python >={{ python_min }}
     - highspy
     - numpy
     - scipy
@@ -43,7 +43,7 @@ test:
   commands:
     - pip check
   requires:
-    - python >= {{ python_min }}
+    - python >={{ python_min }}
     - pip
 
 about:
