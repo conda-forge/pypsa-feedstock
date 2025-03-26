@@ -1,5 +1,5 @@
 {% set name = "pypsa" %}
-{% set version = "0.33.2" %}
+{% set version = "0.34.0" %}
 {% set python_min = "3.10" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/pypsa-{{ version }}.tar.gz
-  sha256: d32c12194e3a973270e2835334cb1cbf0a688aac239590ab6c5b91ce025f708e
+  sha256: d2026d5d1900831e4087cecf6daf6d12285b0f472d0bf2514f81b8510b9013d7
 
 build:
   noarch: python
@@ -22,6 +22,7 @@ requirements:
     - setuptools-scm >=8
     - pip
   run:
+    - seaborn
     - python >={{ python_min }}
     - highspy
     - numpy
