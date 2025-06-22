@@ -1,5 +1,5 @@
 {% set name = "pypsa" %}
-{% set version = "0.34.1" %}
+{% set version = "0.35.0" %}
 {% set python_min = "3.10" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/pypsa-{{ version }}.tar.gz
-  sha256: bc71ba95514a852e700363669681f9005b0b869527fa0b43010293976bfdbc39
+  sha256: f3a11875e9e777b2b36e7368b64f7e006c255b7d1dd02f8e8aaa26b657ea3bcf
 
 build:
   noarch: python
@@ -22,6 +22,7 @@ requirements:
     - setuptools-scm >=8
     - pip
   run:
+    - plotly
     - shapely <2.1
     - seaborn
     - python >={{ python_min }}
