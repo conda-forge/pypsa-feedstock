@@ -55,7 +55,7 @@ about:
   home: https://pypsa.org/
   license: MIT
   license_family: MIT
-  license_file: LICENSE.txt
+  license_file: LICENSE
   summary: Python for Power Systems Analysis
   description: |
     PyPSA is a free software toolbox for simulating and optimising modern power
