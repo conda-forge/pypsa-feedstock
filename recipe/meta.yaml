@@ -1,6 +1,6 @@
 {% set name = "pypsa" %}
-{% set version = "0.35.2" %}
-{% set python_min = "3.10" %}
+{% set version = "1.0.0" %}
+{% set python_min = "3.11" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/pypsa-{{ version }}.tar.gz
-  sha256: 87a0c2df66670262e18676cc633d2745ea82635158d21d060c077fb57b84cf7d
+  sha256: b9db800f6d7f1a560c54fca0129d38f96c6ea7546f450f2fc798ce07c4ef6da3
 
 build:
   noarch: python
@@ -22,6 +22,8 @@ requirements:
     - setuptools-scm >=8
     - pip
   run:
+    - levenshtein >=0.27.1
+    - pydeck
     - plotly
     - shapely <2.1
     - seaborn
@@ -30,10 +32,10 @@ requirements:
     - numpy
     - scipy
     - pandas >=0.24
-    - xarray
+    - xarray <=2025.9.0
     - netcdf4
     - pytables
-    - linopy >=0.4
+    - linopy >=0.5.5
     - matplotlib-base
     - geopandas >=0.9
     - networkx >=2
@@ -53,7 +55,7 @@ about:
   home: https://pypsa.org/
   license: MIT
   license_family: MIT
-  license_file: LICENSE.txt
+  license_file: LICENSE
   summary: Python for Power Systems Analysis
   description: |
     PyPSA is a free software toolbox for simulating and optimising modern power
