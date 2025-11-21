@@ -1,5 +1,5 @@
 {% set name = "pypsa" %}
-{% set version = "1.0.3" %}
+{% set version = "1.0.4" %}
 {% set python_min = "3.11" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/pypsa-{{ version }}.tar.gz
-  sha256: 8425db249e269511895aaddd74acfdb9bfd47a6b943a5dcc1ce1287c3d84ef3f
+  sha256: 24c779d82c6fd16f0770a4f151bf6eb703177107d51e5fac1bbcb1a19523d0e4
 
 build:
   noarch: python
@@ -25,17 +25,17 @@ requirements:
     - levenshtein >=0.27.1
     - pydeck
     - plotly
-    - shapely <2.1
+    - shapely
     - seaborn
     - python >={{ python_min }}
     - highspy
     - numpy
     - scipy
     - pandas >=0.24
-    - xarray <=2025.9.0
+    - xarray
     - netcdf4
     - pytables
-    - linopy >=0.5.5,<=0.5.7
+    - linopy >=0.5.5
     - matplotlib-base
     - geopandas >=0.9
     - networkx >=2
