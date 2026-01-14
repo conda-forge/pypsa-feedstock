@@ -33,7 +33,7 @@ requirements:
     - scipy
     - pandas >=0.24
     - xarray
-    - netcdf4
+    - netcdf4 !=1.7.4
     - pytables
     - linopy >=0.5.5
     - matplotlib-base
