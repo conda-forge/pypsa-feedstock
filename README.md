@@ -159,6 +159,3 @@ Feedstock Maintainers
 * [@lkstrp](https://github.com/lkstrp/)
 * [@nworbmot](https://github.com/nworbmot/)
 
-
-<!-- dummy commit to enable rerendering -->
-
