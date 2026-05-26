@@ -1,5 +1,5 @@
 {% set name = "pypsa" %}
-{% set version = "1.2.1" %}
+{% set version = "1.2.2" %}
 {% set python_min = "3.11" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/pypsa-{{ version }}.tar.gz
-  sha256: 0c635afbc14feffa9c65df50ac9af54d09c01cfc692e8364484e55ebdebfb454
+  sha256: 03e0ed65bdee4262c272ed328eb687665f20b0c712a87eb883660c5dfa785645
 
 build:
   noarch: python
@@ -33,10 +33,10 @@ requirements:
     - numpy
     - scipy
     - pandas >=2.0
-    - xarray <2026.4
+    - xarray
     - netcdf4
     - pytables
-    - linopy >=0.6.1
+    - linopy >=0.7.0
     - matplotlib-base
     - geopandas >=0.9
     - networkx >=2
