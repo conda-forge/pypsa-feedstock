@@ -1,5 +1,5 @@
 {% set name = "pypsa" %}
-{% set version = "1.2.3" %}
+{% set version = "1.2.4" %}
 {% set python_min = "3.11" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/pypsa-{{ version }}.tar.gz
-  sha256: 9a8cd9598ee1c59d64014ade629653df2a9dba4e4923464e7ddf7a6ffbf45e2f
+  sha256: 953e81f35e4a490a04493bc52b8ed4bfd2ddc14c7d2cfffdaa9fa348e0d123c5
 
 build:
   noarch: python
