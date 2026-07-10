@@ -13,7 +13,7 @@ source:
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 0
+  number: 1
 
 requirements:
   host:
@@ -37,7 +37,7 @@ requirements:
     - netcdf4
     - pytables
     - linopy >=0.7.0
-    - matplotlib-base
+    - matplotlib-base !=3.11.0
     - geopandas >=0.9
     - networkx >=2
     - deprecation
