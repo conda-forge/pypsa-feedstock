@@ -25,7 +25,6 @@ requirements:
     - pyarrow
     - rapidfuzz >=3.9.0
     - platformdirs
-    - levenshtein >=0.27.1
     - pydeck >=0.6
     - plotly
     - shapely
